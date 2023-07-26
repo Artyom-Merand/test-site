@@ -348,7 +348,7 @@ footer {
     }
 
     .middle_photo_ch {
-        width: 60%;
+        width: 50%;
     }
 
     .bottom_link {
@@ -360,7 +360,7 @@ footer {
     }
 
     .links_bottom {
-        padding: 8px 50px;
+        padding: 7px 40px;
         font-size: 18px;
     }
     
@@ -460,7 +460,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 420px){
 
     .left_photo_ch {
         width: 60%;
