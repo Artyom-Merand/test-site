@@ -72,6 +72,10 @@ header{
     top: 165%; 
     /* Возможно переделать  */
 }
+.middle_photo_ch{
+    width: 80%;
+    height: 100%;
+}
 .bottom_link{
     width: 75%;
     align-items: center;
