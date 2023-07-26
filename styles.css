@@ -467,7 +467,11 @@ footer {
     }
 
     .left_photo_ch {
-        width: 60%;
+        width: 50%;
+    }
+
+    .middle_photo_ch {
+        width: 40%;
     }
 
     .links_bottom {
@@ -476,7 +480,7 @@ footer {
     }
 
     .bottom_link {
-        margin: 125px auto 0px;
+        margin: 95px auto 0px;
         height: 220px;
     }
 
