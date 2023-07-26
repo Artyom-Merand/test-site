@@ -67,6 +67,7 @@ header{
     align-items: flex-end;
     flex-direction: row;
     align-content: center;
+    padding: 0 0px 23%;
 }
 
 .links_bottom{
