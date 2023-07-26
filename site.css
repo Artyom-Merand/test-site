@@ -69,14 +69,6 @@ header{
     align-content: center;
 }
 
-
-.left_box{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    grid-gap: 20px;
-
-}
 .links_bottom{
     background: #c1eb00;
     padding: 20px 130px;
@@ -110,11 +102,7 @@ header{
     top: -450%;
     left: 30%;
 }
-footer {
-    font-size: 26px;
-    color: #c1eb00;
-    text-align: center;
-}
+
 .about_del{
     background: #2B2E34;
     width: 100%;
