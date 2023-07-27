@@ -293,11 +293,11 @@ header{
 @media screen and (max-width: 450px){
 
     .main{
-        height: 69vh;
+        height: 75vh;
     }
 
     header {
-        padding: 10px 0;
+        padding: 7px 0;
     }
 
     .tg, .vk {
@@ -353,7 +353,7 @@ header{
 @media screen and (max-width: 400px){
 
     .main{
-        height: 65vh;
+        height: 70vh;
     }
 
     .links_bottom {
