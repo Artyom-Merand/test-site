@@ -66,7 +66,6 @@ header{
     justify-content: space-around;
     align-items: flex-end;
     flex-direction: row;
-    align-content: center;
     padding: 0 0px 23%;
 }
 
@@ -140,25 +139,25 @@ header{
 .inner_li { display: list-item; margin-bottom: 20px; }
 .inner_li:before { content: counters(item, ".") " "; counter-increment: item }
 
+/* 1600x900 */
 @media screen and (max-width: 1600px){
-    
-    .links_bottom {
-        padding: 15px 115px;
-        font-size: 24px;
-    }
-    
-    .middle_photo {
-        left: 50%;
-        top: 200%;
+
+    .main {
+        height: 230vh;
     }
 
     .bottom_link {
-        margin: 380px auto 0px;
-        height: 500px;
+        padding: 0 0px 7%;
+    }
+    
+    .lb::after {
+        top: -300%;
+        left: -15%;
     }
 
-    .by_bottom {
-        padding-bottom: 180px;
+    .rb::after {
+        top: -450%;
+        left: 55%;
     }
 
     .content {
@@ -166,36 +165,20 @@ header{
     }
 }
 
+/* 1440x900 */
 @media screen and (max-width: 1440px){
-
-    .logo_middle{
-        width: 45%;
-    }
-
-    .left_photo_ch{
-        width: 45%;
-        height: 100%;
-    }
-
-    .right_photo_ch{
-        width: 45%;
-        height: 100%;
-    }
-
-    .middle_photo {
-        left: 40%;
-        top: 180%;
-    }
-
     .bottom_link {
-        margin: 320px auto 0px;
+        padding: 0 0px 20%;
     }
 
-    .links_bottom {
-        padding: 10px 80px;
-        font-size: 24px;
+    .lb::after {
+        top: -300%;
     }
-
+    
+    .rb::after {
+        top: -450%;
+    }
+    
     .content {
         max-width: 50%;
     }
@@ -211,94 +194,64 @@ header{
 
 }
 
+/* 1366x768 */
 @media screen and (max-width: 1366px){
 
-    .bottom_link {
-        margin: 200px auto 0px;
+    header{
+        padding: 30px 0;
     }
-
-    .links_bottom {
-        padding: 10px 70px;
-        font-size: 21px;
-    }
-
-}
-
-@media screen and (max-width: 1280px){
-
-    .main{
-        height: 240vh;
-    }
-
-    .logo {
-        margin: 0px auto 0;
-    }
-
-    .middle_photo {
-        top: 135%;
-        left: 45%;
-    }
-
-    .middle_photo_ch{
-        width: 75%;
-    }
-
-    .right_photo_ch {
-        width: 40%;
+    
+    .youtube {
+        width: 50px;
+        margin-top: 5px;
     }
 
     .bottom_link {
-        margin: 130px auto 0px;
-    }
-
-    .by_bottom {
-        padding-bottom: 180px;
-        width: 600px;
-    }
-
-    .links_bottom {
-        padding: 10px 60px;
-        font-size: 24px;
+        padding: 0 0px 12%;
     }
 
     .lb::after {
-        top: -500%;
+        top: -300%;
+    }
+
+    .rb::after {
+        top: -450%;
     }
 }
 
+/* 1280x800 */
+@media screen and (max-width: 1280px){
+    .bottom_link {
+        padding: 0px 0px 18%;
+    }
+}
+
+/* 1024x768 */
 @media screen and (max-width: 1024px){
 
     .main {
-        height: 200vh;
+        height: 195vh;
     }
 
     .tg, .vk {
         width: 60px;
     }
 
-    .youtube {
-        width: 50px;
+    .lb::after{
+        left: -3%;
+        top: -250%;
+        content: url("img/tg-left middle.png");
     }
 
-    .left_photo_ch {
-        width: 40%;
-    }
-
-    .right_photo_ch {
-        width: 35%;
-    }
-
-    .middle_photo {
-        top: 115%;
-    }
-    
-    .by_bottom {
-        width: 500px;
+    .rb::after{
+        left: 50%;
+        top: -380%;
+        content: url("img/vk-right middle.png");
     }
 
     .links_bottom {
-        padding: 8px 60px;
-        font-size: 21px;
+        padding: 12px 100px;
+        font-size: 22px;
     }
 
     .content {
@@ -309,40 +262,27 @@ header{
 @media screen and (max-width: 835px){
 
     .main {
-        height: 150vh;
+        height: 100vh;
     }
 
-    .middle_photo {
-        top: 80%;
-        left: 55%;
+    header {
+        padding: 20px 0;
     }
 
-    .middle_photo_ch {
-        width: 50%;
+    .tg, .vk {
+        width: 50px;
     }
 
-    .bottom_link {
-        margin: 130px auto 0px;
-    }
-    
-    .by_bottom {
-        width: 430px;
+    .youtube {
+        width: 45px;
     }
 
     .links_bottom {
-        padding: 7px 40px;
-        font-size: 18px;
-    }
-    
-    .lb::after{
-        top: -280%;
-        left: -5%;
-        content: url("img/tg-left middle.png");
+        padding: 10px 80px;
     }
 
-    .rb::after{
-        top: -500%;
-        content: url("img/vk-right middle.png");
+    .bottom_link {
+        padding: 0px 0px 10%;
     }
 
     .content {
@@ -350,67 +290,27 @@ header{
     }
 }
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 450px){
 
     .main{
-        height: 100vh;
-    }
-    
-    .tg, .vk {
-        width: 45px;
+        height: 69vh;
     }
 
-    .youtube {
+    header {
+        padding: 10px 0;
+    }
+
+    .tg, .vk {
         width: 35px;
     }
 
-    .logo {
-        margin: 5px auto 0;
-    }
-
-    .logo img{
-        width: 75%;
-    }
-
-    .left_photo_ch{
-        width: 50%;
-        height: 100%;
-    }
-
-    .right_photo_ch{
-        height: 100%;
-        width: 40%;
-    }
-
-    .middle_photo {
-        left: 50%;
-        transform: translateY(-50%) translateX(-25%);
-        top: 65%;
-    }
-
-    .middle_photo_ch{
-        width: 45%;
-    }
-
-    .bottom_link {
-        width: 75%;
-        margin: 5px auto 0px;
-        height: 400px;
+    .youtube {
+        width: 29px;
     }
 
     .links_bottom {
-        padding: 8px 35px;
-        font-size: 12px;
-    }
-
-    .div_by_bottom{
-        position: relative;
-    }
-
-    .by_bottom{
-        width: 235%;
-        transform: translateY(-20%) translateX(-25%);
-        padding-bottom: 0px;
+        padding: 5px 45px;
+        font-size: 14px;
     }
 
     .content {
@@ -428,48 +328,48 @@ header{
         left: 70%;
         content: url("img/vk-right mini.png");
     }
+
+    .content {
+        max-width: 85%;
+    }
+
+    .first_header_del {
+        font-size: 32px;
+    }
+
+    .first_paragraph {
+        font-size: 17px;
+    }    
+
+    .second_header {
+        font-size: 24px;
+    }
+
+    .content h3{
+        font-size: 16px!important;;
+    }
 }
 
-@media screen and (max-width: 420px){
+@media screen and (max-width: 400px){
 
-    .logo img {
-        width: 70%;
-    }
-
-    .left_photo_ch {
-        width: 50%;
-    }
-
-    .middle_photo {
-        top: 75%;
-    }
-
-    .middle_photo_ch {
-        width: 40%;
+    .main{
+        height: 60vh;
     }
 
     .links_bottom {
-        padding: 4px 25px;
-        font-size: 10px;
-    }
-
-    .bottom_link {
-        margin: 80px auto 0px;
-        height: 220px;
-    }
-
-    .by_bottom {
-        width: 200%;
+        padding: 4px 40px;
+        font-size: 12px;
     }
 
     .lb::after {
-        top: -425%;
-        left: -30%;
+        top: -325%;
+        left: -15%;
     }
 
     .rb::after {
-        top: -460%;
-        left: 60%;
+        top: -470%;
+        left: 55%;
     }
 
+    
 }
