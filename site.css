@@ -293,7 +293,7 @@ header{
 @media screen and (max-width: 450px){
 
     .main{
-        height: 75vh;
+        height: 100vh;
     }
 
     header {
@@ -352,9 +352,9 @@ header{
 
 @media screen and (max-width: 400px){
 
-    .main{
+    /* .main{
         height: 70vh;
-    }
+    } */
 
     .links_bottom {
         padding: 4px 40px;
